@@ -6,11 +6,13 @@ function mySlide() {
     var i;
     for (i = 0; i < x.length; i++) {
         x[i].style.display = "none";
+        x[i].style.opacity="o";
     }
 
     myIndex++;
     if (myIndex <= x.length) {
         x[myIndex - 1].style.display = "block";
+
     }
 
     if (myIndex > x.length)
@@ -30,7 +32,7 @@ function navBarScrolled() {
     var nv=document.getElementById("nav1");
     //var value=nv.offsetTop;
 
-    if(pageYOffset>890)
+    if(pageYOffset>730)
     {
         nv.classList.add("sticky");
     }

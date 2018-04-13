@@ -8,13 +8,20 @@
     min-height: 100em;
     background-color: white;
     box-shadow: 5px 5px gray;
+    border: 2px solid black;
 }
 
 .headerBar{
     box-sizing: border-box;
-    margin: auto;
-    height: 100px;
+    background-color: white;
+    width: 1420px;
+    //margin: auto;
+    height: 200px;
+    padding-bottom: 150px;
     //border: 2px solid black;
+    position: fixed;
+    top: 0px;
+
 }
 
 .headerBar header{
@@ -25,14 +32,14 @@
     //font-style: oblique;
     font-family: "Verdana";
     text-shadow: 5px 5px lightgray;
-    //color: darkviolet;
+    color: darkviolet;
 }
 
  .headerBar ul{
     //border: 2px solid black;
     //width: 500px;
     list-style-type: none;
-    padding-top: 40px;
+    padding-top: 20px;
     margin: auto;
     float: right;
 }
@@ -88,7 +95,8 @@
      height: 700px;
      margin: auto;
      //border: 2px solid black;
-     margin-top: 60px;
+     margin-top: 250px;
+     width: 1420px;
  }
 
  .nav .transparent{
@@ -163,7 +171,7 @@
     box-sizing: border-box;
     clear: none;
     margin: auto;
-    padding: 0px;
+    //padding: 0px;
     height: 50px;
     width: 1420px;
     //position: relative;
@@ -186,7 +194,7 @@
     margin: auto;
     width: 150px;
     font-weight: normal;
-    color: darkgoldenrod;
+    color: -moz-visitedhyperlinktext;
     font-weight: bold;
     font-size: 20px;
     transition: font-size 1s;
@@ -207,15 +215,88 @@
 }
 
 .sticky{
+    opacity: 1;
     position: fixed;
-    top: 0px;
+    top: 200px;
     width: 1420px;
 }
 
+.packagesBlock{
+    box-sizing: border-box;
+    height: 1000px;
+    margin: auto;
+    //border: 2px solid black;
+    margin-top: 200px;
+}
+
+.sticky + .packagesBlock{
+    padding-top: 350px;
+}
+
+#packagesBase1{
+    box-sizing: border-box;
+    width: 20%;
+    margin-top: 50px;
+    float: left;
+}
+
+#packagesBase2{
+    box-sizing: border-box;
+    width: 20%;
+    margin-top: 100px;
+    float: left;
+}
+
+.packageHeading{
+    box-sizing: border-box;
+    //border: 1px solid deeppink;
+    width: 60%;
+    float: right;
+    text-align: center;
+    //padding-top: 100px;
+    margin-top: 0px;
+
+}
+
+.packageHeading h1{
+    font-family: "mry_KacstQurn";
+    color: deeppink;
+    font-size: 60px;
+    text-shadow: 5px 2px grey;
+}
+
+#packagesBase3{
+    box-sizing: border-box;
+    width: 20%;
+    margin-top: 0px;
+    float: left;
+}
+
+#packagesBase4{
+    box-sizing: border-box;
+    width: 20%;
+    margin-top: 50px;
+    float: left;
+}
+
+#packagesBase5{
+    box-sizing: border-box;
+    width: 20%;
+    margin-top: 100px;
+    float: left;
+}
 
 
+#packagesBase1,#packagesBase2,#packagesBase3,#packagesBase4,#packagesBase5, p{
+    //border: 1px solid blue;
+    padding: 0px 10px 0px;
+    text-align: justify;
+}
 
-
+#packagesBase1,#packagesBase2,#packagesBase3,#packagesBase4,#packagesBase5, img{
+    text-align: center;
+    box-shadow: black;
+}
 
 
 
